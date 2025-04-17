@@ -13,7 +13,7 @@ public class calculocominteraçao {
         int soma = x + y;
         int multi = x * y;
         int expressao = ((x + y)*2)/2;
-        float expressao2 = ((y - x)*(y + x))/x*y ;
+        float expressao2 = (float) ((y - x) * (y + x)) /x*y ;
 
         System.out.println("");
         System.out.println("-------------------------------------------------------------------------");
