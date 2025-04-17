@@ -13,6 +13,8 @@ public class calculocominteraçao {
         int soma = x + y;
         int multi = x * y;
         int expressao = ((x + y)*2)/2;
+        float expressao2 = ((y - x)*(y + x))/x*y ;
+
         System.out.println("");
         System.out.println("-------------------------------------------------------------------------");
         System.out.println("Os resultados das expressões numéricas entre " + x + " e " + y + " são: ");
@@ -34,7 +36,8 @@ public class calculocominteraçao {
         }
 
         System.out.println("Multiplicação: " + multi);
-        System.out.println("Expressão: " + expressao);
+        System.out.println("1° Expressão: " + expressao);
+        System.out.println("2° Expressão: " + expressao2);
 
 
 
