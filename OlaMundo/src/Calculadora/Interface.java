@@ -27,7 +27,46 @@ public class Interface {
                 continue;
             }else if (opcao>5 || opcao<0){
                 System.out.println("Opção Invalida... Tente Novamente!!!");
+                continue;
             }
+
+            System.out.print("Digite o 1° valor: ");
+            int x = scanner.nextInt();
+
+            System.out.print("Digite o 2° valor: ");
+            int y = scanner.nextInt();
+
+            OperacaoMatematica operador;
+
+            switch (opcao){
+                case 1:{
+                    operador = new Soma();
+                    break;
+                }
+                case 2:{
+                    operador = new Subtracao();
+                    break;
+                }
+                case 3:{
+                    operador = new Multiplicacao();
+                    break;
+                }
+                case 4:{
+                    operador = new Divisao();
+                    break;
+                }
+                case 5:{
+                    operador = new Modulo();
+                    break;
+                }
+                default:{
+                    System.out.println("Opção invalida!");
+                    continue;
+                }
+            }
+            double resultado = operador.executar(x, y);
+            System.out.println("O resultado é igual a " + resultado);
         }
+        scanner.close();
     }
 }
