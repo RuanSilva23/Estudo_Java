@@ -11,6 +11,7 @@ public class Fibonacci_Main {
 
         while (continuar){
             System.out.println(" ");
+            System.out.println("============ MENU ============");
             System.out.println("Escolha uma das opções abaixo:");
             System.out.println("1 - Fibonacci Recursiva Simples");
             System.out.println("2 - Fibonacci Com Memoização");
