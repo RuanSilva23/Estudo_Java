@@ -1,4 +1,4 @@
 # Estudo_Java
 
-Esta pasta é dos meus exercicios de Java, a qual estou aprendendo na Faculdade.
- 
+Esta pasta contém meus exercícios de Java, que estou aprendendo na faculdade.
+Apesar de ainda serem simples, estou colocando bastante coisa e aprimorando aos poucos, no meu ritmo, para continuar aprendendo com mais tranquilidade.
