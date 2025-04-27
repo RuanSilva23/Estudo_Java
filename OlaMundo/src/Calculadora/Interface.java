@@ -21,11 +21,11 @@ public class Interface {
                 continue;
             }
 
-            System.out.print("Digite o 1° valor: ");
-            int x = scanner.nextInt();
 
-            System.out.print("Digite o 2° valor: ");
-            int y = scanner.nextInt();
+            int x = escolhaNumeros1(scanner);
+
+
+            int y = escolhaNumero2(scanner);
 
             OperacaoMatematica operador;
 
@@ -73,5 +73,17 @@ public class Interface {
 
         return scanner.nextInt();
 
+    }
+
+    public static int escolhaNumeros1(Scanner scanner){
+        System.out.print("Digite o 1° valor: ");
+
+        return  scanner.nextInt();
+    }
+
+    public static int escolhaNumero2(Scanner scanner) {
+        System.out.print("Digite o 2° valor: ");
+
+        return  scanner.nextInt();
     }
 }
