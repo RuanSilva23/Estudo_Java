@@ -9,16 +9,7 @@ public class Interface {
         boolean continuar = true;
 
         while (continuar){
-            System.out.println("\nEscolha uma das operações abaixo:");
-            System.out.println("1 - Soma");
-            System.out.println("2 - Subtração");
-            System.out.println("3 - Multiplicação");
-            System.out.println("4 - Divisão");
-            System.out.println("5 - Modulo da soma dos números");
-            System.out.println("0 - Sair");
-            System.out.print("Digite uma opção: ");
-
-            int opcao = scanner.nextInt();
+            int opcao = exibirMenu(scanner);
 
             if (opcao == 0){
                 continuar = false;
@@ -68,5 +59,19 @@ public class Interface {
             System.out.println("O resultado é igual a " + resultado);
         }
         scanner.close();
+    }
+
+    public static int exibirMenu(Scanner scanner){
+        System.out.println("\nEscolha uma das operações abaixo:");
+        System.out.println("1 - Soma");
+        System.out.println("2 - Subtração");
+        System.out.println("3 - Multiplicação");
+        System.out.println("4 - Divisão");
+        System.out.println("5 - Modulo da soma dos números");
+        System.out.println("0 - Sair");
+        System.out.print("Digite uma opção: ");
+
+        return scanner.nextInt();
+
     }
 }
