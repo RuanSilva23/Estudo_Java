@@ -16,7 +16,7 @@ public class Interface {
                 System.out.println("Obrigado por usar");
                 System.out.println("Encerrando......");
                 continue;
-            }else if (opcao>5 || opcao<0){
+            }else if (opcao>6 || opcao<0){
                 System.out.println("Opção Invalida... Tente Novamente!!!");
                 continue;
             }
@@ -27,29 +27,37 @@ public class Interface {
 
             int y = escolhaNumero2(scanner);
 
+            NomesOperadores operacao = NomesOperadores.fromCodigo(opcao);
+
             OperacaoMatematica operador;
 
-            switch (opcao){
-                case 1:{
+            switch (operacao){
+                case SOMA:{
                     operador = new Soma();
                     break;
                 }
-                case 2:{
+                case SUBTRACAO:{
                     operador = new Subtracao();
                     break;
                 }
-                case 3:{
+                case MULTIPLICACAO:{
                     operador = new Multiplicacao();
                     break;
                 }
-                case 4:{
+                case DIVISAO:{
                     operador = new Divisao();
                     break;
                 }
-                case 5:{
+                case MODULO:{
                     operador = new Modulo();
                     break;
                 }
+
+                case POTENCIACAO:{
+                    operador = new Potenciacao();
+                    break;
+                }
+
                 default:{
                     System.out.println("Opção invalida!");
                     continue;
@@ -68,6 +76,7 @@ public class Interface {
         System.out.println("3 - Multiplicação");
         System.out.println("4 - Divisão");
         System.out.println("5 - Modulo da soma dos números");
+        System.out.println("6 - Potenciação");
         System.out.println("0 - Sair");
         System.out.print("Digite uma opção: ");
 
