@@ -5,5 +5,6 @@ public class Potenciacao implements OperacaoMatematica {
         double base = x;
         double expoente = y;
         return Math.pow(base, expoente);
+
     }
 }
