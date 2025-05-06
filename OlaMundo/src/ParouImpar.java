@@ -96,7 +96,6 @@ public class ParouImpar {
                         }
                     }
                     break;
-
                 }
 
                 case 6:{
@@ -111,12 +110,8 @@ public class ParouImpar {
                         System.out.println("O número é Par. ");
                     }
                     break;
-
                 }
             }
-
-
-
         }
     }
 
