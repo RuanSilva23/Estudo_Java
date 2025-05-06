@@ -26,6 +26,11 @@ public class ParouImpar {
                     }else {
                         double raizQuadrada = Math.sqrt(raizX);
                         System.out.println("A raiz de " + raizX + " = " + raizQuadrada);
+                        if (raizQuadrada % 2 == 1){
+                            System.out.println("O número é Impar. ");
+                        }else {
+                            System.out.println("O número é Par. ");
+                        }
                     }
                     break;
                 }
@@ -37,6 +42,11 @@ public class ParouImpar {
                     int Soma = somaX + somaY;
 
                     System.out.println("O resultado da soma é igual a " + Soma);
+                    if (Soma % 2 == 1){
+                        System.out.println("O número é Impar. ");
+                    }else {
+                        System.out.println("O número é Par. ");
+                    }
                     break;
 
                 }
@@ -47,6 +57,11 @@ public class ParouImpar {
 
                     int Subtracao = subtracaoX - subtracaoY;
                     System.out.println("O resultado da subtração é igual a " + Subtracao);
+                    if (Subtracao % 2 == 1){
+                        System.out.println("O número é Impar. ");
+                    }else {
+                        System.out.println("O número é Par. ");
+                    }
                     break;
                 }
 
@@ -56,6 +71,11 @@ public class ParouImpar {
 
                     int Multiplicacao = multiX * multiY;
                     System.out.println("O resultado da multiplicação é igual a " + Multiplicacao);
+                    if (Multiplicacao % 2 == 1){
+                        System.out.println("O número é Impar. ");
+                    }else {
+                        System.out.println("O número é Par. ");
+                    }
                     break;
 
                 }
@@ -69,6 +89,11 @@ public class ParouImpar {
                     } else {
                        double Divisao = (double) diviX/diviY;
                         System.out.println("O resultado da divisão é igual a " + Divisao);
+                        if (Divisao % 2 == 1){
+                            System.out.println("O número é Impar. ");
+                        }else {
+                            System.out.println("O número é Par. ");
+                        }
                     }
                     break;
 
@@ -80,6 +105,11 @@ public class ParouImpar {
 
                     double Potenciacao = Math.pow(potencX, potencY);
                     System.out.println("O resultado da potenciação é igual a " + Potenciacao);
+                    if (Potenciacao % 2 == 1){
+                        System.out.println("O número é Impar. ");
+                    }else {
+                        System.out.println("O número é Par. ");
+                    }
                     break;
 
                 }
