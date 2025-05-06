@@ -89,7 +89,7 @@ public class ParouImpar {
                     } else {
                        double Divisao = (double) diviX/diviY;
                         System.out.println("O resultado da divisão é igual a " + Divisao);
-                        if (Divisao % 2 == 1){
+                        if ((int)Divisao % 2 == 1){
                             System.out.println("O número é Impar. ");
                         }else {
                             System.out.println("O número é Par. ");
