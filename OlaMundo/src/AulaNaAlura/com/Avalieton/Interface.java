@@ -1,6 +1,7 @@
 package AulaNaAlura.com.Avalieton;
 
 import AulaNaAlura.com.Avalieton.Modelos.Filme;
+import AulaNaAlura.com.Avalieton.Modelos.Musica;
 import AulaNaAlura.com.Avalieton.Modelos.Serie;
 
 import java.util.Scanner;
@@ -38,6 +39,13 @@ public class Interface {
         loki.setNome("Loki");
         loki.setAnoDeLancamento(2023);
         loki.exibirNome();
+
+        Musica rock = new Musica();
+        rock.setNome("Faroeste a Cabloco.");
+        rock.setNome("Renato Russo");
+        rock.setTempoDaMusica(9);
+
+        rock.exibirNome();
 
 
 
