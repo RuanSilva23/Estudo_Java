@@ -1,9 +1,10 @@
-package AulaNaAlura.Avalieton.Modelos;
+package AulaNaAlura.com.Avalieton.Modelos;
 
-public class Filme {
+public class Titulo {
     private String nome;
     private int totalDeAvaliacao;
     private double mediaAvaliacao;
+    private int DuracaoEmMinutos;
     private int anoDeLancamento;
     private String incluidoNoPlano;
 
@@ -22,6 +23,7 @@ public class Filme {
     public void exibirNome(){
         System.out.println("O nome do filme: " + nome);
         System.out.println("O ano de lançamento: " + anoDeLancamento);
+        System.out.println("A duração: " + DuracaoEmMinutos + " minutos.");
         System.out.println("Esse filme está " + getIncluidoNoPlano() + " no plano.");
     }
 
@@ -32,5 +34,13 @@ public class Filme {
 
     public double mediaAvalia(){
         return mediaAvaliacao/totalDeAvaliacao;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return DuracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        DuracaoEmMinutos = duracaoEmMinutos;
     }
 }
