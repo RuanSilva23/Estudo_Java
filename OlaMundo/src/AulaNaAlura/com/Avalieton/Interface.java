@@ -3,6 +3,7 @@ package AulaNaAlura.com.Avalieton;
 import AulaNaAlura.com.Avalieton.Modelos.Filme;
 import AulaNaAlura.com.Avalieton.Modelos.Musica;
 import AulaNaAlura.com.Avalieton.Modelos.Serie;
+import AulaNaAlura.com.Avalieton.com.Avalieton.Calculation;
 
 import java.util.Scanner;
 
@@ -10,10 +11,12 @@ public class Interface {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Filme meufilme = new Filme();
+        meufilme.setNome("Avatar");
+        meufilme.setDuracaoEmMinutos(200);
 
         meufilme.setDuracaoEmMinutos(200);
 
-        System.out.print("Nome do filme: ");
+        /*System.out.print("Nome do filme: ");
         String nome = scanner.nextLine();
 
         System.out.print("Ano de lançamento: ");
@@ -33,19 +36,31 @@ public class Interface {
             meufilme.media(6);
 
             System.out.println("A média do filme: " + meufilme.mediaAvalia());
-        }
+        }*/
 
         Serie loki = new Serie();
         loki.setNome("Loki");
         loki.setAnoDeLancamento(2023);
-        loki.exibirNome();
+        loki.setTemporadas(2);
+        loki.setEpisodiosPorTemporada(6);
+        loki.setDuracaoPorEpisodio(50);
+        System.out.println("Duração da série em mitutos é " + loki.getDuracaoEmMinutos());
+        /*loki.exibirNome();
 
         Musica rock = new Musica();
         rock.setNome("Faroeste a Cabloco.");
         rock.setNome("Renato Russo");
         rock.setTempoDaMusica(9);
 
-        rock.exibirNome();
+        rock.exibirNome();*/
+
+        Calculation calculadora = new Calculation();
+        calculadora.inclui(meufilme);
+        Filme outrofilme = new Filme();
+        outrofilme.setNome("Top Gun");
+        outrofilme.setDuracaoEmMinutos(150);
+        calculadora.inclui(outrofilme);
+        System.out.println(calculadora.getTempoTotal());
 
 
 
