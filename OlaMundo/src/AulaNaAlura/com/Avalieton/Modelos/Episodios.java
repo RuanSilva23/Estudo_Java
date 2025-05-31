@@ -1,6 +1,6 @@
 package AulaNaAlura.com.Avalieton.Modelos;
 
-import AulaNaAlura.com.Avalieton.com.Avalieton.Classificavel;
+import AulaNaAlura.com.Avalieton.com.calculo.Classificavel;
 
 public class Episodios implements Classificavel {
     private int numero;

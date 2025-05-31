@@ -8,6 +8,11 @@ public class Titulo {
     private int anoDeLancamento;
     private String incluidoNoPlano;
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -18,6 +23,10 @@ public class Titulo {
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public String getIncluidoNoPlano() {
