@@ -1,4 +1,4 @@
-package AulaNaAlura;
+package AulaNaAlura.Aulas;
 
 import java.util.Arrays;
 import java.util.Scanner;

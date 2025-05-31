@@ -1,6 +1,8 @@
 package AulaNaAlura.com.Avalieton.Modelos;
 
-public class Serie extends Titulo {
+import AulaNaAlura.com.Avalieton.com.Avalieton.Classificavel;
+
+public class Serie extends Titulo implements Classificavel {
     private int temporadas;
     private boolean ativa;
     private int duracaoPorEpisodio;
@@ -41,5 +43,9 @@ public class Serie extends Titulo {
     @Override
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * duracaoPorEpisodio;
+    }
+
+    public int getClassificacao(){
+        return 0;
     }
 }

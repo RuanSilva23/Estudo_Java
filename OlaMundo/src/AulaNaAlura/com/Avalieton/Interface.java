@@ -1,10 +1,14 @@
 package AulaNaAlura.com.Avalieton;
 
+import AulaNaAlura.com.Avalieton.Modelos.Episodios;
 import AulaNaAlura.com.Avalieton.Modelos.Filme;
 import AulaNaAlura.com.Avalieton.Modelos.Musica;
 import AulaNaAlura.com.Avalieton.Modelos.Serie;
 import AulaNaAlura.com.Avalieton.com.Avalieton.Calculation;
+import AulaNaAlura.com.Avalieton.com.Avalieton.Classificavel;
+import AulaNaAlura.com.Avalieton.com.Avalieton.Recomendacao;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Interface {
@@ -15,6 +19,12 @@ public class Interface {
         meufilme.setDuracaoEmMinutos(200);
 
         meufilme.setDuracaoEmMinutos(200);
+
+        meufilme.mediaAvalia();
+        meufilme.media(10);
+        meufilme.media(8);
+        System.out.println(meufilme.mediaAvalia());
+
 
         /*System.out.print("Nome do filme: ");
         String nome = scanner.nextLine();
@@ -61,6 +71,31 @@ public class Interface {
         outrofilme.setDuracaoEmMinutos(150);
         calculadora.inclui(outrofilme);
         System.out.println(calculadora.getTempoTotal());
+
+        Recomendacao recomendacao = new Recomendacao();
+        recomendacao.filtra(meufilme);
+
+        Episodios episodios = new Episodios();
+        episodios.setNumero(1);
+        episodios.setNome("Loki");
+        episodios.setTotalDeVisualizcoes(1000);
+        recomendacao.filtra(episodios);
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Vingadores");
+        outroFilme.setDuracaoEmMinutos(200);
+        outroFilme.setAnoDeLancamento(2012);
+
+        ArrayList<Filme> filmes = new ArrayList<>();
+        filmes.add(meufilme);
+        filmes.add(outroFilme);
+        System.out.println(filmes.get(0).getNome());
+        System.out.println(filmes.size());
+
+        for (int i = 0; i < filmes.toArray().length ; i++) {
+            System.out.println(filmes.get(i).getNome());
+
+        }
 
 
 
