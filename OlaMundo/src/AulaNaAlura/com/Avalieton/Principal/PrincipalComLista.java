@@ -4,9 +4,7 @@ import AulaNaAlura.com.Avalieton.Modelos.Filme;
 import AulaNaAlura.com.Avalieton.Modelos.Serie;
 import AulaNaAlura.com.Avalieton.Modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class PrincipalComLista {
     public static void main(String[] args) {
@@ -16,11 +14,11 @@ public class PrincipalComLista {
         Filme outroFilme = new Filme("Velozes e Furiosos", 2012);
         outroFilme.media(9);
         Filme doRuan = new Filme("Avatar", 2014);
-        for (int i = 0; i < 3; i++) {
+        /*for (int i = 0; i < 3; i++) {
             System.out.print("Nota para o filme("+doRuan.getNome() +"): ");
             int x = scanner.nextInt();
             doRuan.media(x);
-        }
+        }*/
 
         Serie serie = new Serie("Loki", 2023);
 
@@ -36,5 +34,20 @@ public class PrincipalComLista {
                 System.out.println("Classificação: " + filme1.getClassificacao() );
             }
         }
+
+        ArrayList<String> buscaPorArtistas = new ArrayList<>();
+        buscaPorArtistas.add("Ruan");
+        buscaPorArtistas.add("Alice");
+        buscaPorArtistas.add("Maria Luisa");
+        buscaPorArtistas.add(1, "Zoe");
+        System.out.println(buscaPorArtistas);
+
+        Collections.sort(buscaPorArtistas);
+
+        System.out.println(buscaPorArtistas);
+
+        System.out.println("Listas ordenadas pelos titulos dos filmes e séries:");
+        Collections.sort(lista);
+        System.out.println(lista);
     }
 }

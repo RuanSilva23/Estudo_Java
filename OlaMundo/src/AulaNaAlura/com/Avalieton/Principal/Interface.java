@@ -57,7 +57,7 @@ public class Interface {
         filmes.add(outroFilme);
         filmes.add(filmeDoRuan);
         filmes.add(filme);
-        System.out.println("O primeiro filme da lista: " + filmes.get(0).getNome());
+        System.out.println("O primeiro filme da lista: " + filmes.getFirst().getNome());
         System.out.println("O tamanho da lista: " + filmes.size());
 
         System.out.println(filmes);
