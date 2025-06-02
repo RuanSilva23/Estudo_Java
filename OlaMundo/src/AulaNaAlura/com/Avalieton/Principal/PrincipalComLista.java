@@ -22,7 +22,8 @@ public class PrincipalComLista {
 
         Serie serie = new Serie("Loki", 2023);
 
-        List<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
+
         lista.add(filme);
         lista.add(outroFilme);
         lista.add(doRuan);
@@ -47,7 +48,28 @@ public class PrincipalComLista {
         System.out.println(buscaPorArtistas);
 
         System.out.println("Listas ordenadas pelos titulos dos filmes e séries:");
-        Collections.sort(lista);
-        System.out.println(lista);
+        System.out.println("1 - Ordenação em ordem alfabetica");
+        System.out.println("2 - Ordenação em ordem de lançamento");
+        System.out.print("Opção: ");
+        int opcao = scanner.nextInt();
+
+        switch (opcao){
+            case 1:
+                Collections.sort(lista);
+                System.out.println(lista);
+                break;
+
+            case 2:
+                lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+                System.out.println(lista);
+                break;
+
+            default:
+                System.out.println("Erro.");
+                break;
+        }
+
+
+
     }
 }
