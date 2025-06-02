@@ -55,14 +55,14 @@ public class Interface {
         loki.setEpisodiosPorTemporada(6);
         loki.setDuracaoPorEpisodio(50);
         System.out.println("Duração da série em mitutos é " + loki.getDuracaoEmMinutos());
-        /*loki.exibirNome();
+        //loki.exibirNome();
 
         Musica rock = new Musica();
         rock.setNome("Faroeste a Cabloco.");
         rock.setNome("Renato Russo");
         rock.setTempoDaMusica(9);
 
-        rock.exibirNome();*/
+        rock.exibirNome();
 
         Calculation calculadora = new Calculation();
         calculadora.inclui(meufilme);
