@@ -6,6 +6,10 @@ public class Musica extends Titulo{
     private int tempoDaMusica;
     private String cantor;
 
+    public Musica(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
     public String getEstilo() {
         return estilo;
     }

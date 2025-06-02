@@ -1,12 +1,17 @@
 package AulaNaAlura.com.Avalieton.Modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     private String nome;
     private int totalDeAvaliacao;
     private double mediaAvaliacao;
     private int DuracaoEmMinutos;
     private int anoDeLancamento;
     private String incluidoNoPlano;
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -18,6 +23,10 @@ public class Titulo {
 
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
     }
 
     public String getIncluidoNoPlano() {
@@ -46,5 +55,10 @@ public class Titulo {
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         DuracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }

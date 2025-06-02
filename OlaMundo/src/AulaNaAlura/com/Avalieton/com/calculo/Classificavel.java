@@ -1,4 +1,4 @@
-package AulaNaAlura.com.Avalieton.com.Avalieton;
+package AulaNaAlura.com.Avalieton.com.calculo;
 
 public interface Classificavel {
     int getClassificacao();
