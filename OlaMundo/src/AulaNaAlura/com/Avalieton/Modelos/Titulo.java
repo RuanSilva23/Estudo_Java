@@ -1,10 +1,14 @@
 package AulaNaAlura.com.Avalieton.Modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo>{
+    @SerializedName("Title")
     private String nome;
     private int totalDeAvaliacao;
     private double mediaAvaliacao;
     private int DuracaoEmMinutos;
+    @SerializedName("Year")
     private int anoDeLancamento;
     private String incluidoNoPlano;
 
